@@ -57,12 +57,30 @@ null
 ```
 
 #### Reverse
+Versione meno efficiente:
 ```scheme
 (define rovescia ; val: lista
  (lambda (s)     ; s: lista
   (if (null? s)
       null
       (append (rovescia (cdr s)) (list (car s)))
+   )
+  )
+ )
+ ```
+Versione più efficiente:
+```scheme
+(define rovescia ; val: lista
+ (lambda (s)     ; s: lista
+  (rovescia-rec s null)
+  )
+ )
+
+(define rovescia-rec ; val: lista
+ (lambda (s r)         ; s: lista
+  (if (null? s)
+      r
+      (rovescia-rec (cdr s) (cons (car s) r))
    )
   )
  )
