@@ -3,15 +3,43 @@ Corso di programmazione dell'anno accademico 2021/22
 
 ## 11/11/2021
 ### Liste
-1) Lista vuota:
+#### Lista vuota
 ```scheme
 null
+'()
 ```
 
+#### Cons
+cons serve per aggiugnere un elemento a una lista:
 ```scheme
-(cons 15 null)
+(cons 15 null) ; aggiunge il numero 15 a una lista vuota
 ```
 
+#### Null?
+null? serve per sapere se una lista contiene degli elementi:
+```scheme
+(null? null) ; #true
+(null? (cons 15 null)) ; #false
+```
+
+#### Car
+car ritorna il primo elemento di una lista:
+```scheme
+(car (cons 15 null)) ; 15
+```
+
+#### Cdr
+cdr ritorna la lista senza il primo elemento:
+```scheme
+(cdr (cons 15 null)) ; '()
+```
+
+#### Quote
+Differenza list e ':
+```scheme
+'(+ 1 2) ; (list '+ 1 2)
+list(+ 1 2) ; (list 3)
+```
 
 #### List-ref
 ```scheme
