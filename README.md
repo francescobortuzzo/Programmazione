@@ -33,7 +33,7 @@ null
 
 #### Length
 ```scheme
-(define list-length
+(define lunghezza
  (lambda (list)
   (if (null? list)
       0
@@ -55,3 +55,15 @@ null
   )
  )
 ```
+
+#### Reverse
+```scheme
+(define rovescia ; val: lista
+ (lambda (s)     ; s: lista
+  (if (null? s)
+      null
+      (append (rovescia (cdr s)) (list (car s)))
+   )
+  )
+ )
+ ```
