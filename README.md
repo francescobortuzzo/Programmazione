@@ -1,25 +1,115 @@
-# Programmazione e laboratorio
-## Lezione 1 - 27/09/21
+# Programmazione
+Corso di programmazione dell'anno accademico 2021/22
 
-1. Informazioni generali sul corso (pagine del corso).
+## 11/11/2021
+### Liste
+#### Lista vuota
+```scheme
+null
+'()
+```
 
-2. Presentazione del corso e motivazioni delle scelte didattiche:
+#### Cons
+cons serve per aggiugnere un elemento a una lista:
+```scheme
+(cons 15 null) ; aggiunge il numero 15 a una lista vuota
+```
 
-   - Obiettivi metodologici;
+#### Null?
+null? serve per sapere se una lista contiene degli elementi:
+```scheme
+(null? null) ; #true
+(null? (cons 15 null)) ; #false
+```
 
-   - Discussione di esempi;
+#### Car
+car ritorna il primo elemento di una lista:
+```scheme
+(car (cons 15 null)) ; 15
+```
 
-   - Ruolo dell'astrazione;
+#### Cdr
+cdr ritorna la lista senza il primo elemento:
+```scheme
+(cdr (cons 15 null)) ; '()
+```
 
-   - Strumenti di programmazione.
+#### Quote
+Differenza list e ':
+```scheme
+'(+ 1 2) ; (list '+ 1 2)
+list(+ 1 2) ; (list 3)
+```
 
-3. Impostazione generale del corso:
-   
-     Parte I   - Astrazione procedurale;
+#### List-ref
+```scheme
+(define list-pos ; val: T
+ (lambda (s i)   ; s: lista di T, i: intero
+  (cond
+   (
+    (= i 0)
+    (car s)
+    )
+   (
+    else
+    (list-pos (cdr s) (- i 1))
+    )
+   )
+  )
+ )
+```
 
-     Parte II  - Astrazione sui dati;
+#### Length
+```scheme
+(define lunghezza
+ (lambda (list)
+  (if (null? list)
+      0
+      (+ 1 (list-length (cdr list)))
+   )
+  )
+ )
+```
 
-     Parte III - Astrazione relativa allo stato.
+#### Append
+```scheme
+(define giustapponi ; val: lista
+ (lambda (s t)      ; s, t: liste
+  (cond
+   ((null? s) t)
+   ((null? t) s)
+   (else (cons (car s) (giustapponi (cdr s) t)))
+   )
+  )
+ )
+```
 
+#### Reverse
+Versione meno efficiente:
+```scheme
+(define rovescia ; val: lista
+ (lambda (s)     ; s: lista
+  (if (null? s)
+      null
+      (append (rovescia (cdr s)) (list (car s)))
+   )
+  )
+ )
+ ```
+Versione più efficiente:
+```scheme
+(define rovescia ; val: lista
+ (lambda (s)     ; s: lista
+  (rovescia-rec s null)
+  )
+ )
 
-Riferimenti: vedi pagine e schede di presentazione del corso.
+(define rovescia-rec ; val: lista
+ (lambda (s r)         ; s: lista
+  (if (null? s)
+      r
+      (rovescia-rec (cdr s) (cons (car s) r))
+   )
+  )
+ )
+ ```
