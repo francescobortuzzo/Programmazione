@@ -140,6 +140,12 @@ Versione più efficiente:
    )
   )
  )
+
+(define mul2
+ (lambda (m n)
+  (mul-tr m n 0)
+  )
+ )
 ```
 #### MCD
 ```scheme
