@@ -113,3 +113,49 @@ Versione più efficiente:
   )
  )
  ```
+
+## 18/11/2021
+### Ricorsione ad albero
+#### Moltiplicazione
+```scheme
+(define mul
+ (lambda (m n)
+  (cond
+   ((= n 0) 0)
+   ((even? n) (mul (* 2 m) (quotient n 2)))
+   (else (+ m (mul (* 2 m) (quotient n 2))))
+   )
+  )
+ )
+```
+### Ricorsione a coda
+#### Moltiplicazione
+```scheme
+(define mul-tr   ; val: intero
+ (lambda (m n p) ; m, n, p: interi non negativi
+  (cond
+   ((= n 0) p)
+   ((even? n) (mul-tr (* 2 m) (quotient n 2) p))
+   (else      (mul-tr (* 2 m) (quotient n 2) (+ m p)))
+   )
+  )
+ )
+
+(define mul2
+ (lambda (m n)
+  (mul-tr m n 0)
+  )
+ )
+```
+#### MCD
+```scheme
+(define mcd
+ (lambda (x y)
+  (cond
+   ((= x y) x)
+   ((< x y) (mcd x (- y x)))
+   (else (mcd (- x y) y))
+   )
+  )
+ )
+ ```
