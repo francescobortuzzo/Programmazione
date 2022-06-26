@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=BottomUpLIS
+comment0.text=\r\n\ \r\n\ LABORATORIO\ DI\ PROGRAMMAZIONE\r\n\ a.a.\ 2021-22\r\n\ \r\n\ Progetto\ \u201CLongest\ Increasing\ Subsequence\u201D\ \u2013\ II\ (bottom-up)\r\n\ 19\ Maggio\ 2022\r\n\ \r\n\ Della\ Giustina\ Lorenzo\r\n\ \r\n\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\r\n\ \r\n\ Data\ una\ sequenza\ s\ di\ n\ interi\ positivi,\ rappresentata\ da\ un\ array,\ il\ seguente\ programma\ in\ Java\ calcola\ la\ lunghezza\r\n\ della\ pi\u00F9\ lunga\ sottosequenza\ di\ s\ strettamente\ crescente\ (llis\:\ length\ of\ the\ longest\ increasing\ subsequence).\r\n\ \ \r\n
+comment1.params=s
+comment1.target=int\ llis(int[])
+comment1.text=\ llis\r\ncalcola\ la\ lunghezza\ della\ pi\u00F9\ lunga\ sottosequenza\ di\ s\ strettamente\ crescente
+comment2.params=s\ i\ t
+comment2.target=int\ llisRec(int[],\ int,\ int)
+comment2.text=\ llisRec\r\ncalcola\ la\ llis\ di\ s\ a\ partire\ dalla\ posizione\ i\ (imponendo\ il\ vincolo\ che\ gli\ elementi\ della\ sottosequenza\ debbano\ essere\ >\ t)
+comment3.params=s
+comment3.target=int\ llisDP(int[])
+comment4.params=s
+comment4.target=int[]\ lisDP(int[])
+numComments=5

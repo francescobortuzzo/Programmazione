@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=lis
+comment0.text=\r\n\ \r\n\ LABORATORIO\ DI\ PROGRAMMAZIONE\r\n\ a.a.\ 2021-22\r\n\ \r\n\ Progetto\ \u201CLongest\ Increasing\ Subsequence\u201D\ \u2013\ I\r\n\ 12\ Maggio\ 2022\r\n\ \r\n\ Della\ Giustina\ Lorenzo\r\n\ \r\n\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\r\n\ \r\n\ Data\ una\ sequenza\ s\ di\ n\ interi\ positivi,\ rappresentata\ da\ un\ array,\ il\ seguente\ programma\ in\ Java\ calcola\ la\ lunghezza\r\n\ della\ pi\u00F9\ lunga\ sottosequenza\ di\ s\ strettamente\ crescente\ (llis\:\ length\ of\ the\ longest\ increasing\ subsequence).\r\n\ \ \r\n
+comment1.params=s
+comment1.target=int\ llis(int[])
+comment1.text=\ llis\r\ncalcola\ la\ lunghezza\ della\ pi\u00F9\ lunga\ sottosequenza\ di\ s\ strettamente\ crescente
+comment2.params=s\ i\ t
+comment2.target=int\ llisRec(int[],\ int,\ int)
+comment2.text=\ llisRec\r\ncalcola\ la\ llis\ di\ s\ a\ partire\ dalla\ posizione\ i\ (imponendo\ il\ vincolo\ che\ gli\ elementi\ della\ sottosequenza\ debbano\ essere\ >\ t)
+comment3.params=s
+comment3.target=int\ llisMemTmp(int[])
+comment3.text=\ 1.\ llisMem\r\napplicazione\ della\ tecnica\ top-down\ di\ memoization\ in\ SITUAZIONI\ SEMPLIFICATE
+comment4.params=s\ i\ t\ mem
+comment4.target=int\ llisMemTmpRec(int[],\ int,\ int,\ int[][])
+comment5.params=s
+comment5.target=int\ llisMem(int[])
+comment5.text=\ 2.\ llisMem\r\nApplicazione\ della\ tecnica\ top-down\ di\ memoization\ in\ CASI\ pi\u00F9\ GENERALI
+comment6.params=s\ i\ j\ mem
+comment6.target=int\ llisMemRec(int[],\ int,\ int,\ int[][])
+numComments=7

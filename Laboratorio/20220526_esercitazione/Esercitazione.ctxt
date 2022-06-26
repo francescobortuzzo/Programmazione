@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Esercitazione
+comment0.text=\r\n\ Aggiungi\ qui\ una\ descrizione\ della\ classe\ Esercitazione\r\n\ \r\n\ @author\ (il\ tuo\ nome)\ \r\n\ @version\ (un\ numero\ di\ versione\ o\ una\ data)\r\n
+comment1.params=x\ y\ z
+comment1.target=int\ middleOfThree(int,\ int,\ int)
+comment2.params=branch\ rest\ leaf
+comment2.target=int\ lunchTime(int,\ int,\ int)
+comment3.params=arr
+comment3.target=double[]\ closestPair(double[])
+comment4.params=arr
+comment4.target=boolean\ symmetricalMatrix(double[][])
+numComments=5

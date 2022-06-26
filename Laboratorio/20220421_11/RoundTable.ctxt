@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=RoundTable
+comment0.text=\r\n\ \r\n\ LABORATORIO\ DI\ PROGRAMMAZIONE\r\n\ a.a.\ 2021-22\r\n\ \r\n\ Problema\ 11\r\n\ 21\ Aprile\ 2022\r\n\ \r\n\ Della\ Giustina\ Lorenzo\r\n\ \r\n\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\r\n\ \r\n\ Classe\ RoundTable\:\r\n\r\n\ Modello\ alla\ base\ del\ problema\ di\ Giuseppe\ Flavio\r\n\ (rivisto\ in\ termini\ di\ cavalieri\ attorno\ al\ tavolo)\r\n\ \r\n\r\n\ Protocollo\:\r\n\r\n\ rt\ \=\ new\ RoundTable(n)\ \ \:\ RoundTable\ \ \ costruttore\ della\ disposizione\ iniziale\ con\ (int)\ n\ \u2265\ 2\ cavalieri\r\n\ rt.numberOfKnights()\ \ \ \ \:\ int\ \ \ \ \ \ \ \ \ \ numero\ di\ cavalieri\ a\ tavola\r\n\ rt.servingKnights()\ \ \ \ \ \:\ IntSList\ \ \ \ \ coppia\ (lista\ di\ due\ elementi)\ di\ cavalieri\ che\ servono\ il\ terzo\ se\ c\u2019\u00E8\r\n\ rt.serveNeighbour()\ \ \ \ \ \:\ RoundTable\ \ \ disposizione\ risultante\ dopo\ aver\ servito\ il\ prossimo\ cavaliere,\ che\ esce\r\n\ rt.passJug()\ \ \ \ \ \ \ \ \ \ \ \ \:\ RoundTable\ \ \ disposizione\ risultante\ dopo\ aver\ passato\ la\ brocca\r\n
+comment1.params=n
+comment1.target=RoundTable(int)
+comment1.text=\ RoundTable\r\ncostruttore\ della\ disposizione\ iniziale\ con\ (int)\ n\ \u2265\ 2\ cavalieri
+comment2.params=n\ j\ h\ t
+comment2.target=RoundTable(int,\ IntSList,\ IntSList,\ IntSList)
+comment3.params=
+comment3.target=int\ numberOfKnights()
+comment3.text=\ numberOfKnights\r\nnumero\ di\ cavalieri\ a\ tavola
+comment4.params=
+comment4.target=IntSList\ servingKnights()
+comment4.text=\ servingKnights\r\ncoppia\ (lista\ di\ due\ elementi)\ di\ cavalieri\ che\ servono\ il\ terzo\ se\ c\u2019\u00E8
+comment5.params=
+comment5.target=RoundTable\ serveNeighbour()
+comment5.text=\ serveNeighbour\r\ndisposizione\ risultante\ dopo\ aver\ servito\ il\ prossimo\ cavaliere,\ che\ esce
+comment6.params=
+comment6.target=RoundTable\ passJug()
+comment6.text=\ passJug\r\ndisposizione\ risultante\ dopo\ aver\ passato\ la\ brocca
+comment7.params=inf\ sup
+comment7.target=IntSList\ range(int,\ int)
+numComments=8

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Queens
+comment1.params=n
+comment1.target=int\ numberOfSolutions(int)
+comment2.params=board
+comment2.target=int\ numberOfCompletions(Board)
+comment3.params=n
+comment3.target=SList\ listOfSolutions(int)
+comment4.params=board
+comment4.target=SList\ listOfCompletions(Board)
+comment5.params=LsB
+comment5.target=void\ boardView(SList)
+comment5.text=\ \r\n\ Metodo\ statico\ che,\ data\ una\ lista\ di\ tipo\ SList<Board>\ relativa\ a\ scacchiere\ tutte\ della\ stessa\ dimensione,\r\n\ visualizza\ in\ successione\ l\u2019immagine\ di\ ciascuna\ scacchiera\ che\ fa\ parte\ della\ lista\ sulla\ GUI.\r\n\ \ \r\n
+numComments=6

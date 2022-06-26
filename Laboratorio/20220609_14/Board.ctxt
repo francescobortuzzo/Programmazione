@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Board
+comment0.text=\r\n\ \r\n\ LABORATORIO\ DI\ PROGRAMMAZIONE\r\n\ a.a.\ 2021-22\r\n\ \r\n\ Problema\ 14\ -\ Il\ \u201Crompicapo\ del\ 15\u201D\r\n\ 9\ giugno\ 2022\r\n\ \r\n\ Della\ Giustina\ Lorenzo\r\n\ \r\n\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\ *\r\n\ \r\n\ Protocollo\:\r\n\ new\ Board(int\ n)\ \ \ \ \ \:\ Board\ \ \ \ \ \ \ \ \ costruttore\ per\ istanziare\ un\ modello\ della\ tavoletta\r\n\ isOrdrd()\ \ \ \ \ \ \ \ \ \ \ \ \:\ boolean\ \ \ \ \ \ \ metodo\ per\ verificare\ se\ i\ tasselli\ sono\ ordinati\r\n\ canBeMoved(int\ i)\ \ \ \ \:\ boolean\ \ \ \ \ \ \ metodo\ per\ verificare\ se\ un\ dato\ tassello\ pu\u00F2\ essere\ spostato\r\n\ toString()\ \ \ \ \ \ \ \ \ \ \ \:\ String\ \ \ \ \ \ \ \ metodo\ per\ mostrare\ in\ forma\ testuale\ (stringa)\ la\ configurazione\r\n\ move(int\ i)\ \ \ \ \ \ \ \ \ \ \:\ void\ \ \ \ \ \ \ \ \ \ metodo\ per\ spostare\ un\ dato\ tassello\r\n\ \r\n
+comment1.params=n
+comment1.target=Board(int)
+comment1.text=\r\n\ costruttore\ per\ istanziare\ un\ modello\ della\ tavoletta\r\n\ \r\n\ @param\ \ n\ \ \ lato\ della\ tavoletta\r\n\ @return\ \ \ \ \ board\ nxn\r\n
+comment2.params=
+comment2.target=boolean\ isOrdrd()
+comment2.text=\r\n\ metodo\ per\ verificare\ se\ i\ tasselli\ sono\ ordinati\r\n\ \r\n\ @return\ \ \ \ \ booleano\ che\ indica\ se\ i\ tasselli\ sono\ ordinati\r\n
+comment3.params=i
+comment3.target=boolean\ canBeMoved(int)
+comment3.text=\r\n\ metodo\ per\ verificare\ se\ un\ dato\ tassello\ pu\u00F2\ essere\ spostato\r\n\ \r\n\ @param\ \ i\ \ \ tassello\ che\ si\ vuole\ spostare\r\n\ @return\ \ \ \ \ booleano\ che\ indica\ se\ il\ tassello\ pu\u00F2\ essere\ spostato\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ metodo\ per\ mostrare\ in\ forma\ testuale\ (stringa)\ la\ configurazione\r\n\ \r\n\ @return\ \ \ \ \ stringa\ che\ rappresenta\ la\ configurazione\r\n
+comment5.params=i
+comment5.target=void\ move(int)
+comment5.text=\r\n\ metodo\ per\ spostare\ un\ dato\ tassello\r\n\ \r\n\ @return\ \ \ \ \ void\r\n
+comment6.params=
+comment6.target=void\ play()
+numComments=7

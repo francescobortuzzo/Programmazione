@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Queens
+comment1.params=n
+comment1.target=int\ numberOfSolutions(int)
+comment2.params=board
+comment2.target=int\ numberOfCompletions(Board)
+comment3.params=n
+comment3.target=SList\ listOfSolutions(int)
+comment4.params=board
+comment4.target=SList\ listOfCompletions(Board)
+numComments=5
