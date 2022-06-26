@@ -1,0 +1,39 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 20211116_6) (read-case-sensitive #t) (teachpacks ((lib "drawings.ss" "installed-teachpacks"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "drawings.ss" "installed-teachpacks")) #f)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; LABORATORIO DI PROGRAMMAZIONE
+;; a.a. 2021-22
+;;
+;; Problema 6
+;; 16 / 19 Novembre 2021
+;;
+;; Della Giustina Lorenzo
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; funzione che, data la lunghezza del lato più corto della regione da coprire ("n"), che si assume sia una potenza di due, restituisce l’ “immagine” della regione tassellata
+(define L-tessellation ; L-tessellation: img
+ (lambda (n)           ; n: number power of 2
+  (cond
+   (
+    (= n 1)
+    L-tile
+    )
+   (
+    else
+    (glue-tiles
+     (L-tessellation (/ n 2))
+     (glue-tiles
+      (shift-down (shift-right (L-tessellation (/ n 2)) (* 0.5 (/ n 2))) (* 0.5 (/ n 2)))
+      (glue-tiles
+       (shift-right (quarter-turn-right (L-tessellation (/ n 2))) (/ n 2))
+       (shift-down (quarter-turn-left (L-tessellation (/ n 2))) (/ n 2))
+       )
+      )
+     )
+    )
+   )
+  )
+ )
