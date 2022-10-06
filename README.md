@@ -53,10 +53,7 @@ list(+ 1 2) ; (list 3)
    (
     else
     (list-pos (cdr s) (- i 1))
-    )
-   )
-  )
- )
+    ))))
 ```
 
 #### Length
